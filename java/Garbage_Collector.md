@@ -37,9 +37,11 @@ stack --> heap( list-->[String, String])
   - CPU 코어가 1개만 있을 때 사용하는 방식
   - mark, sweep에 compact 과정이 추가됨
 ## parllel GC
+- java 8 기본 GC
   - GC 처리하는 스레드가 여러개이다.
   - 메모리가 충분하고 코어개수가 많을 때 사용
 ## Concurrent Mark sweep GC(CMS GC)
+- deprecated
 - Stop-the-world
   - GC를 실행하기 위해 JVM이 애플레이션 실행을 멈추는 것이다
     - stop-the-world가 발생하면 GC 실행하는 스레드를 제외한 나머지 스레드를 모두 멈춘다.
@@ -51,7 +53,9 @@ stack --> heap( list-->[String, String])
 -  다른 방식의 GC보다 메모리와 CPU 더 많이 사용.
 - compaction 이 없다.
 ## G1 GC
+- java 9부터 기본 GC
 - 각 영역을 Region 영역으로 나눈다.
+
 - GC가 일어날 때, 전체 영역(Eden,survival, old generation)을 탐색하지 않는다.
 - stop-the-world 시간이 짧다. compaction을 사용한다.
 

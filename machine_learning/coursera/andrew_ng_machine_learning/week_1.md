@@ -98,3 +98,32 @@ J(theta x) function of the parameter theta1
   - each countour line has same cost function value
 ![image](images/week1_10.PNG)
   
+
+# Gradient Descent 
+- minimize J(theta0 to theta n)
+
+- start with some theta 0, theta1
+  - say theta 0 = 0, theta 1 = 0
+  - keep changing theta 0,theta 1, to reduce J until we end up miminum
+
+[image](images/week1_12.PNG)
+- initialize gradient descent
+  - local optimum 
+  - if step is little different local optimum could be different
+  - 
+[image](images/week1_13.PNG)
+- repeat until convergence
+  - asignment  - a:=b
+  - truth assertion  a=b
+  - theta j := theta j - alpha(learning rate)
+
+[image](images/week1_14.PNG)
+- simultaneous update
+  - make theta 0
+    - temp0 := theta 0
+  - incorrect
+    - update theta 0
+    - plug new value of theta0 to temp1
+
+- the size of each step is determined by parameter alpha : learning rate
+- direction of step is determined by the `partial derivitive` of J (theta0, theta1)

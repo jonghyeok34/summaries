@@ -127,3 +127,40 @@ J(theta x) function of the parameter theta1
 
 - the size of each step is determined by parameter alpha : learning rate
 - direction of step is determined by the `partial derivitive` of J (theta0, theta1)
+
+## Gradient descent : intuition
+
+- function J of theta 1
+  - theta 1 is real number
+  - theta 1 := theta1 - alpha (delta/ delta theta1) J(theta1)
+- alpha *partial derivitves =  alpha (delta/ delta theta1)
+  - alpha * partial dervitives >=0
+    - positive slope
+  - alpha * partial dervitives <0
+    - negative slope
+[image](images/week_1_15.PNG)
+- alpha: learning rate
+  - if alpha is small , gradient descent can be slow
+  - if alpha is too large, gradient descent can overshoot the minimum.
+    - It may fail to converge, or even diverge
+
+- when partial deritive =0 - at local minimum
+  - gradient descent can `converge` , even with the learing rate alpha fixed
+-  as we appraoch a local minimum, automatically take smaller steps.
+
+## gradient descent for linear regression
+
+- you can go to various local minimum
+- convex function
+  - cost function of `linear regression` has always one local optima = global optima
+  - bowl shape function
+    - only one local optima = global optima 
+[image](images/)
+- `batch gradient descent`
+  - batch : each step of gradient descent uses all the training examples.
+    - we start with a guess for our `hypothesis`
+    - repeatedly apply these gradient descent equations
+    - our hypothesis will become more and more accurate.
+
+Q. quadratic function : 2차 함수
+Q. convex function?

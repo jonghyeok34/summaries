@@ -164,3 +164,32 @@ J(theta x) function of the parameter theta1
 
 Q. quadratic function : 2차 함수
 Q. convex function?
+
+
+
+# matrices
+- matrices: rectangular array of numbers
+  - dimension of matrix : numbers of the row * number of columns
+  - Aij = i,j entry in the ith row, jth column
+
+  - A11 = 1402
+  - A12 = 191
+  - A32 = 1437
+  - A41 = 147
+  - A43 = undefined
+
+- vector : n*1 matrix
+    - e.g)
+      - R 4 - 4 dimensional vector
+      - yi = ith element
+      - y1 = 460
+      - y2 = 232
+      - y3 = 315
+      - y4 = 178
+    - 1-indexed vs 0-indexed (4 elements)
+      - y1 ~ y4
+      - y0 ~ y3
+
+```
+
+```

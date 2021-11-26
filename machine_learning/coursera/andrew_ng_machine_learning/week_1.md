@@ -190,6 +190,42 @@ Q. convex function?
       - y1 ~ y4
       - y0 ~ y3
 
+## addition and muliplication sclar multiplication
 ```
 
+[1,0;2,5;3,1] + [4,0.5;2,5;0,1] = [5,0.5;4,10;3,2]
+```
+- sclar
+
+```
+3*[1;4;2] + [0;0;5] -[3;0;2]/3
+= [3;12;6] +[0;0;5] -[1;0;2/3]
+= [3;12;11] -[1;0;2/3]
+= [2;12;9 1/3]
+```
+
+## matrix vector multiplication
+
+```
+[1,3;4,0;2,1]*[1;5] = [16;4;7]
+```
+
+when A * x = y
+A = m*n matrix (m rows, n columns)
+x = n*1 matrix (n-d matrix)
+y = m*1 matrix(m-dimensional vector)
+
+```
+product of two 
+(3*4) * (4*1) = (3*1)
+[1,2,1,5;0,3,0,4; -1,-2,0,0] [1;3;2;1]
+= [1+6+2+5;0+9+0+4; -1-6]
+= [14;13;-7]
+```
+
+- when houses sizes [2104,1416,1534, 852]
+- price hypothesis : h theta(x) = -40 + 0.25x
+```
+[1,2104;1, 1416; 1, 1534; 1, 852] * [-40, 0.25] = 
+[-40*1+0.25*2104; -40*1+0.25*1416;...;...]
 ```

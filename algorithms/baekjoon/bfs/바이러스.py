@@ -44,7 +44,7 @@ check = {}
 for i in range(link_count):
     start, end = [int(x) for x in input().split()]
     if not graph.get(start):
-        graph[start] =[]
+        graph[start] = []
     if not graph.get(end):
         graph[end] = []
     graph[start].append(end)
@@ -52,17 +52,19 @@ for i in range(link_count):
 
 for j in range(point_count):
     check[j+1] = False
-    
+
 count = 0
+
 
 def dfs(current):
     if check.get(current) is False:
         if current != 1:
             global count
             check[current] = True
-            count +=1
+            count += 1
         for next in graph[current]:
-            dfs( next)
+            dfs(next)
+
 
 dfs(1)
 print(count)

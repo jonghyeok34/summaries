@@ -9,7 +9,7 @@ bfs_check = [True]
 dfs_result = []
 bfs_result = []
 
-for i in range( N):
+for i in range(N):
     graph.append([])
 
 for i in range(M):
@@ -19,18 +19,21 @@ for i in range(M):
 
 for i in range(1, len(graph)):
     graph[i] = sorted(graph[i])
-    
+
 for i in range(N):
     dfs_check.append(False)
     bfs_check.append(False)
+
 
 def dfs(start):
     if dfs_check[start] is False:
         print(start, end=' ')
         dfs_check[start] = True
-        
+
         for nextStart in graph[start]:
-            dfs(nextStart)        
+            dfs(nextStart)
+
+
 def bfs():
     queue = deque()
     queue.append(V)
@@ -43,6 +46,8 @@ def bfs():
             if bfs_check[next] is False:
                 bfs_check[next] = True
                 queue.append(next)
+
+
 # 1. dfs
 dfs(V)
 print()

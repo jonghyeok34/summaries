@@ -10,7 +10,7 @@ array.reverse()
 
 print(array)
 dp = [1]* n
-print(dp)
+# print(dp)
 for i in range(1, n):
     for j in range(0,i):
         if array[j] < array[i]:

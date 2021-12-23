@@ -31,6 +31,6 @@ def setMinDistance(distance, prevX, prevY):
             distanceCheck[f'{prevX}-{nextY}'] = newDistance
             setMinDistance(newDistance, prevX, nextY)
 
-setMinDistance(0, 1,1)
+setMinDistance(0 , 1,1)
 print(distanceCheck[f'{n}-{m}'])    
     # return get

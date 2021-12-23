@@ -28,7 +28,7 @@ def bfs(x, y):
             # graph 0
             if graph[nx][ny] ==0:
                 continue
-            # ?? 무슨 의미
+            # 새로운 x,y
             if graph[nx][ny] == 1:
                 graph[nx][ny] = graph[x][y] +1
                 queue.append((nx,ny))
